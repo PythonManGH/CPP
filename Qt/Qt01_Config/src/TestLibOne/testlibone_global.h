@@ -1,0 +1,12 @@
+#ifndef TESTLIBONE_GLOBAL_H
+#define TESTLIBONE_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(TESTLIBONE_LIBRARY)
+#  define TESTLIBONESHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define TESTLIBONESHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TESTLIBONE_GLOBAL_H
