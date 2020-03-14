@@ -13,12 +13,12 @@ MenuWidget::MenuWidget(QWidget *parent) :
     menuBar->resize(width(),menuBar->height());
 
     // 向 menuBar 中添加菜单
-    QMenu* menu1 = menuBar->addMenu(QString::fromLocal8Bit("菜单1"));
+    QMenu* menu1 = menuBar->addMenu(QStringLiteral("菜单1"));
     // 向menu1中添加按钮
-    QAction* action1 = menu1->addAction(QString::fromLocal8Bit("按钮1"));
+    QAction* action1 = menu1->addAction(QStringLiteral("按钮1"));
 
     // 向 menuBar 中添加菜单
-    QMenu* menu2 = menuBar->addMenu(QString::fromLocal8Bit("菜单2"));
+    QMenu* menu2 = menuBar->addMenu(QStringLiteral("菜单2"));
     // 向 menu 中添加 二级菜单
     QMenu* menu22 = menu2->addMenu(QString::fromLocal8Bit("菜单22"));
     // 给menu22设置图标
@@ -29,8 +29,8 @@ MenuWidget::MenuWidget(QWidget *parent) :
     menu3->setIcon(QIcon("../../resource/list.png"));
 
     // QMenu和QAction 两个最常用的 信号
-    connect(menu3,SIGNAL(triggered(QAction*)),this,SLOT(slotTragger(QAction*));
-    connect(menu3,SIGNAL(hoverd(QAction*)),this,SLOT(slotTragger(QAction*));
+    //connect(menu3,SIGNAL(triggered(QAction*)),this,SLOT(slotTragger(QAction*));
+    //connect(menu3,SIGNAL(hoverd(QAction*)),this,SLOT(slotTragger(QAction* ));
 
 
 
